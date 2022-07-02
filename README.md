@@ -31,5 +31,6 @@ For more on this, see https://sembr.org.
 
 A low-key way to add comments or questions on the text is to put comments in the $\TeX$ source with your initials. This doesn't clutter up the compiled PDF. For example:
 ```tex
-% WSD: I don't understand the result described below
+% WSD: I don't understand the sentence below
+A confusing sentence
 ```
