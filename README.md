@@ -1,21 +1,23 @@
 # Template repository for a $\LaTeX$ document
 
-## Compilation with [`latexmk`](https://mg.readthedocs.io/latexmk.html)
+## Template contents
+- $\TeX$ source file: [`main.tex`](main.tex)
+- bibtex bibliography file: [`references.bib`](references.bib)
+- [`latexmkrc`](latexmkrc) file for optional customization of build directives (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs)
+
+## Compilation with `latexmk`
 
 ### Build
+Build [`main.pdf`](main.pdf) with
 ```bash
 latexmk -pdf
 ```
-will produce [`main.pdf`](main.pdf)
 
 ### Clean
+Clean auxiliary files with
 ```bash
 latexmk -pdf -c
 ```
-
-## Configuration
-
-Customize build directives by modifying the [`latexmkrc`](latexmkrc) file (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs)
 
 ## Writing suggestions
 
