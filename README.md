@@ -3,6 +3,7 @@
 ## Template contents
 - $\mathrm{\TeX}$ source file: [`main.tex`](main.tex)
 - bibtex bibliography file: [`references.bib`](references.bib)
+- example PDF figure [`darwin-rocks.pdf`](darwin-rocks.pdf)
 - [`latexmkrc`](latexmkrc) file for optional customization of build directives (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs)
 
 ## Dependencies
