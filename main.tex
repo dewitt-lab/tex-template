@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass{article}
 
 % preamble
 % --------
@@ -6,35 +6,57 @@
 \usepackage[font={footnotesize,sf}]{caption}
 \usepackage[hidelinks]{hyperref}
 
-\usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage{bm}
-\usepackage{bbm}
 \DeclareMathOperator{\erf}{erf}
 \DeclareMathOperator{\lngamma}{\ln\!\Gamma}
 \DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\usepackage{amssymb}
+\usepackage{bm}
+
+\usepackage{bbm}
 \renewcommand{\P}{\mathbb{P}} % Probability
-\newcommand{\R}{\mathbb{R}} % Reals
 \newcommand{\E}{\mathbb{E}} % Expectation
+\newcommand{\R}{\mathbb{R}} % Reals
+
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
 \newtheorem{prop}{Proposition}
-\DeclareMathOperator*{\argmax}{arg\,max}
 % --------
 
 
-\title{$\TeX$ template}
-\author{You and me}
+\title{\LaTeX{} template}
+\author{You \and me}
 
 \begin{document}
 
 \maketitle
 
-\noindent
-Evolution is awesome\cite{darwin1909origin}.
+\section*{Introduction}\label{sec:intro}
+
+\begin{prop}\label{prop:evo}
+Evolution is awesome.
+\end{prop}
+\begin{proof}
+  See \cite{darwin1909origin} and Figure~\ref{fig:darwin} in \nameref{sec:results}.
+\end{proof}
+
+\section*{Results}\label{sec:results}
+
+As shown in Figure~\ref{fig:darwin}, Charles Darwin rocked hard---really hard.
+This finding is used to prove Proposition~\ref{prop:evo}.
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=0.3\textwidth]{darwin-rock}
+ \caption{Archival photograph of Charles Darwin playing his electric guitar.}
+ \label{fig:darwin}
+\end{figure}
 
 
 \bibliographystyle{plain}
 \bibliography{references}
+
 \end{document}
