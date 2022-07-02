@@ -8,7 +8,7 @@
 
 ## Dependencies
 
- - $\mathrm{\TeX Live}$: www.tug.org/texlive/
+ - $\mathrm{\TeX{} Live}$: www.tug.org/texlive/
 
 ## Compilation with `latexmk`
 
