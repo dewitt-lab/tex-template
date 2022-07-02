@@ -23,7 +23,7 @@ latexmk -pdf -c
 
 ### Semantic line breaks
 
-While writing $\TeX$ source files add a line break after each sentence (or clause).
+While writing $\TeX$ source files, add a line break after each sentence (or clause).
 This makes editing and collaborating on the text much easier, and it makes git diffs much more readable.
 For more on this, see https://sembr.org.
 
