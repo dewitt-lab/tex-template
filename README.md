@@ -1,4 +1,4 @@
-# Template repository for a $\LaTeX$ document
+# Template repository for a $\LaTeX$ project
 
 ## Template contents
 - $\TeX$ source file: [`main.tex`](main.tex)
