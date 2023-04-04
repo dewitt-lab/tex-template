@@ -274,3 +274,6 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# ignore main pdf file because we have a github action to automatically generate it
+main.pdf
