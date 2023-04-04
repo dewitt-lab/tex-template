@@ -10,7 +10,12 @@
 
  - $\mathrm{\TeX\ Live}$: www.tug.org/texlive/
 
-## Compilation with `latexmk`
+## Web-based PDF access
+
+A [GitHub Action](https://github.com/WSDeWitt/tex-template/actions/workflows/build.yml), triggered by push, automatically builds the PDF.
+The PDF can be accessed as an artifact of each action run.
+
+## Local PDF compilation with `latexmk`
 
 ### Build
 Build [`main.pdf`](main.pdf) with
