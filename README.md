@@ -10,10 +10,11 @@
 
  - $\mathrm{\TeX\ Live}$: www.tug.org/texlive/
 
-## Web-based PDF access
+## Web-based PDF compilation and hosting
 
 A [GitHub Action](https://github.com/WSDeWitt/tex-template/actions/workflows/build.yml), triggered by push, automatically builds the PDF.
 The PDF can be accessed as an artifact of each action run.
+It is not necessary to commit PDF files from your local build (the [`.gitignore`](https://github.com/WSDeWitt/tex-template/blob/fa0b7d4de2e2807224e6d43c07395f5d476c0a5b/.gitignore#L278-L279) is set to ignore the main PDF file).
 
 ## Local PDF compilation with `latexmk`
 
