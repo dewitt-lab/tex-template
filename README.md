@@ -1,3 +1,6 @@
+<!---see here for how the relative links work: https://stackoverflow.com/questions/60193771/a-badge-in-github-template-repository-that-will-refer-to-clones-build-status-n--->
+[![](../../actions/workflows/build.yml/badge.svg)](../../actions/workflows/build.yml)
+
 # Template repository for a $\mathrm{\LaTeX}$ project
 
 ## Template contents
@@ -9,12 +12,6 @@
 ## Dependencies
 
  - $\mathrm{\TeX\ Live}$: www.tug.org/texlive/
-
-## Web-based PDF compilation and hosting
-
-A [GitHub Action](https://github.com/WSDeWitt/tex-template/actions/workflows/build.yml), triggered by push, automatically builds the PDF.
-The PDF can be accessed as an artifact of each action run.
-It is not necessary to commit PDF files from your local build (the [`.gitignore`](https://github.com/WSDeWitt/tex-template/blob/fa0b7d4de2e2807224e6d43c07395f5d476c0a5b/.gitignore#L278-L279) is set to ignore the main PDF file).
 
 ## Local PDF compilation with `latexmk`
 
@@ -45,3 +42,11 @@ A low-key way to add comments or questions on the text is to put comments in the
 % WSD: I don't understand the sentence below
 A confusing sentence
 ```
+
+## PDF compilation testing
+
+A GitHub Action, triggered by push, automatically builds the PDF.
+The PDF can be accessed as an artifact of each action run.
+Click the badge icon at the top of this README to access the these runs.
+If $\mathrm{\TeX}$ compilation errors occur, the badge will reflect this, and the author will receive an email.
+It is not necessary to commit PDF files from your local build (the [`.gitignore`](https://github.com/WSDeWitt/tex-template/blob/fa0b7d4de2e2807224e6d43c07395f5d476c0a5b/.gitignore#L278-L279) is set to ignore the main PDF file).
