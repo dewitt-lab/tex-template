@@ -275,5 +275,5 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 
-# ignore main pdf file because we have a github action to automatically generate it
-main.pdf
+# No need to keep compiled pdfs (note: pdf image files must be kept in a subdirectory to avoid being ignored)
+/*.pdf
