@@ -14,23 +14,29 @@
 
  - $\mathrm{\TeX\ Live}$: www.tug.org/texlive/
 
-## PDF compilation testing
+## PDF compilation
+
+> **Note**
+> It is not necessary to commit compiled PDF files from your local build.
+> The [`.gitignore`](https://github.com/WSDeWitt/tex-template/blob/fa0b7d4de2e2807224e6d43c07395f5d476c0a5b/.gitignore#L278-L279) is set to ignore PDF files in the root directory.
+> If you want to commit PDF files (i.e. for figures), put them in a subdirectory.
+
+### Testing
 
 A GitHub Action, triggered by push, automatically builds the PDF.
 The PDF can be accessed as an artifact of each action run.
 Click the badge icon at the top of this README to access the these runs.
 If $\mathrm{\TeX}$ compilation errors occur, the badge will reflect this, and the author of the breaking changes will receive an email.
-It is not necessary to commit PDF build files (and the [`.gitignore`](https://github.com/WSDeWitt/tex-template/blob/fa0b7d4de2e2807224e6d43c07395f5d476c0a5b/.gitignore#L278-L279) is set to ignore the main PDF file).
 
-## Local PDF compilation with `latexmk`
+### Local PDF compilation with `latexmk`
 
-### Build
+#### Build
 Build [`main.pdf`](main.pdf) with
 ```bash
 latexmk -pdf
 ```
 
-### Clean
+#### Clean
 Auxiliary build files will be ignored by `git`, but you can clean them locally with
 ```bash
 latexmk -pdf -c
