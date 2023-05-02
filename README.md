@@ -31,7 +31,7 @@ If $\mathrm{\TeX}$ compilation errors occur, the badge will reflect this, and th
 ### Local PDF compilation with `latexmk`
 
 #### Build
-Build [`main.pdf`](main.pdf) with
+Build `main.pdf` with
 ```bash
 latexmk -pdf
 ```
