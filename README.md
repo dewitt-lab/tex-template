@@ -1,18 +1,18 @@
-# Template repository for a $\mathrm{\LaTeX}$ project
+# Template repository for a LaTeX project
 
 <!---see here for how the relative links work: https://stackoverflow.com/questions/60193771/a-badge-in-github-template-repository-that-will-refer-to-clones-build-status-n--->
 [![](../../actions/workflows/build.yml/badge.svg)](../../actions/workflows/build.yml)
 
 
 ## Template contents
-- $\mathrm{\TeX}$ source file: [`main.tex`](main.tex)
+- $\TeX$ source file: [`main.tex`](main.tex)
 - bibtex bibliography file: [`references.bib`](references.bib)
 - example PDF figure [`darwin-rock.pdf`](figures/darwin-rock.pdf)
 - [`latexmkrc`](latexmkrc) file for optional customization of build directives (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs)
 
 ## Dependencies
 
- - $\mathrm{\TeX\ Live}$: www.tug.org/texlive/
+ - $\TeX$ Live: www.tug.org/texlive/
 
 ## PDF compilation
 
