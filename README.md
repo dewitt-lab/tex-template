@@ -52,7 +52,7 @@ For more on this, see https://sembr.org.
 
 ### Initialed source comments
 
-A low-key way to add comments or questions on the text is to put comments in the $\mathrm{\TeX}$ source with your initials. This doesn't clutter up the compiled PDF. For example:
+A low-key way to add comments or questions on the text is to put comments in the TeX source with your initials. This doesn't clutter up the compiled PDF. For example:
 ```tex
 % WSD: I don't understand the sentence below
 A confusing sentence
