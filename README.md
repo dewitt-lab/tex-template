@@ -18,7 +18,7 @@
 
 > **Note**
 > It is not necessary to commit compiled PDF files from your local build.
-> The [`.gitignore`](https://github.com/WSDeWitt/tex-template/blob/fa0b7d4de2e2807224e6d43c07395f5d476c0a5b/.gitignore#L278-L279) is set to ignore PDF files in the root directory.
+> The [`.gitignore`](.gitignore) is set to ignore PDF files in the root directory.
 > If you want to commit PDF files (i.e. for figures), put them in a subdirectory.
 
 ### Testing
