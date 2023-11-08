@@ -12,7 +12,7 @@
 
 ## Dependencies
 
- - TeX Live: www.tug.org/texlive/
+ - TeX Live: [www.tug.org/texlive/]()
 
 ## PDF compilation
 
