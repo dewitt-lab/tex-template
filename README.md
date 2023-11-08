@@ -25,7 +25,7 @@
 
 A GitHub Action, triggered by push, automatically builds the PDF.
 The PDF can be accessed as an artifact of each action run.
-Click the badge icon at the top of this README to access the these runs.
+Click the badge icon at the top of this README to access these runs.
 If TeX compilation errors occur, the badge will reflect this, and the author of the breaking changes will receive an email.
 
 ### Local PDF compilation with `latexmk`
