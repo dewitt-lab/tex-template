@@ -16,7 +16,7 @@
 
 ## PDF compilation
 
-> **Note**
+> [!NOTE]
 > It is not necessary to commit compiled PDF files from your local build.
 > The [`.gitignore`](.gitignore) is set to ignore PDF files in the root directory.
 > If you want to commit PDF files (i.e. for figures), put them in a subdirectory.
