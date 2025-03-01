@@ -6,9 +6,10 @@
 
 ## Template contents
 - TeX source file: [`main.tex`](main.tex)
-- bibtex bibliography file: [`references.bib`](references.bib)
-- example PDF figure [`darwin-rock.pdf`](figures/darwin-rock.pdf)
+- Bibtex bibliography file: [`references.bib`](references.bib)
+- Example PDF figure: [`darwin-rock.pdf`](figures/darwin-rock.pdf)
 - [`latexmkrc`](latexmkrc) file for optional customization of build directives (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs)
+- GitHub Actions workflow file (testing PDF compilation): [`.github/workflows/build.yml`](.github/workflows/build.yml)
 
 ## Dependencies
 
