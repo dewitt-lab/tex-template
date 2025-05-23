@@ -6,30 +6,21 @@
 
 ## Template contents
 - TeX source file: [`main.tex`](main.tex)
-- Configuration file: [`_config.yml`](_config.yml)
+- Index page template: [`index.md`](index.md) (used for GitHub Pages)
 - Bibtex bibliography file: [`references.bib`](references.bib)
 - Example PDF figure: [`darwin-rock.pdf`](figures/darwin-rock.pdf)
 - [`latexmkrc`](latexmkrc) file for optional customization of build directives (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs)
-- GitHub Actions workflow file (testing PDF compilation): [`.github/workflows/build-deploy.yml`](.github/workflows/build-deploy.yml)
+- GitHub Actions workflow file (building and deploying PDFs): [`.github/workflows/build-deploy.yml`](.github/workflows/build-deploy.yml)
 
-## Configuration
+## Automatic Document Compilation
 
-The [`_config.yml`](_config.yml) file allows you to specify which LaTeX documents to publish to GitHub Pages:
+This template automatically compiles all `.tex` files [`index.md`](index.md) to PDFs. You can simply:
 
-```yaml
-documents:
-  - main
-  - chapter1
-  - appendix
-```
+1. Add your LaTeX files to the repository root
+2. Update the [`index.md`](index.md) file to include links to your new files
+3. Push changes to the main branch
+4. All PDFs will be automatically compiled and deployed to GitHub Pages
 
-If you have multiple LaTeX documents in your repository, add them to the `documents` list in `_config.yml` (without the `.tex` extension). These documents will be:
-
-1. Compiled to PDF
-2. Listed on the GitHub Pages site
-3. Available for download
-
-If you don't specify any documents in `_config.yml`, all `.tex` files in the root directory will be compiled by default.
 
 ## Dependencies
 
@@ -44,14 +35,29 @@ If you don't specify any documents in `_config.yml`, all `.tex` files in the roo
 
 ### Testing
 
-A GitHub Action, triggered by push, automatically compiles PDFs and publishes to GitHub Pages.
-The PDF can be accessed as an artifact of each action run.
+A GitHub Action, triggered by push, automatically compiles all LaTeX files to PDF and publishes them to GitHub Pages.
+The PDFs can be accessed as artifacts of each action run.
 Click the badge icon at the top of this README to access these runs.
 If TeX compilation errors occur, the badge will reflect this, and the author of the breaking changes will receive an email.
 
 ### GitHub Pages Deployment
 
-This template includes automatic deployment to GitHub Pages. When you push to the main branch, the documents specified in [`_config.yml`](_config.yml) will be compiled and their PDFs will be deployed to GitHub Pages with a simple directory listing.
+This template includes automatic deployment to GitHub Pages. When you push to the main branch, all TeX files in the root directory will be compiled and their PDFs will be deployed to GitHub Pages.
+
+The [`index.md`](index.md) file serves as the landing page for your GitHub Pages site. It:
+- Is automatically processed by GitHub Pages using Jekyll
+- Displays your repository description
+- Lists links to all compiled PDF documents
+- Adapts to show all compiled PDFs from your LaTeX files
+
+#### Customizing the Index Page
+
+You can customize the [`index.md`](index.md) file to change the layout of your GitHub Pages site. The file uses Jekyll's Liquid templating language to dynamically display content:
+
+- `{{ site.github.project_tagline }}` displays your repository description
+- The link section automatically displays links to the PDF files
+
+If you want to add more content or change the styling, you can modify this file while keeping the dynamic link generation.
 
 To enable GitHub Pages for your repository:
 
