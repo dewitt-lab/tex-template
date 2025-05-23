@@ -1,7 +1,7 @@
 # Template repository for a LaTeX project
 
 <!---see here for how the relative links work: https://stackoverflow.com/questions/60193771/a-badge-in-github-template-repository-that-will-refer-to-clones-build-status-n--->
-[![](../../actions/workflows/build-deploy.yml/badge.svg)](../../actions/workflows/build-deploy.yml)
+[![Build and Deploy](../../actions/workflows/build-deploy.yml/badge.svg)](../../actions/workflows/build-deploy.yml)
 
 
 ## Template contents
@@ -28,6 +28,17 @@ A GitHub Action, triggered by push, automatically compiles PDFs and publishes to
 The PDF can be accessed as an artifact of each action run.
 Click the badge icon at the top of this README to access these runs.
 If TeX compilation errors occur, the badge will reflect this, and the author of the breaking changes will receive an email.
+
+### GitHub Pages Deployment
+
+This template includes automatic deployment to GitHub Pages. When you push to the main branch, all TeX files will be compiled and their PDFs will be deployed to GitHub Pages with a simple directory listing.
+
+To enable GitHub Pages for your repository:
+1. Go to the repository settings
+2. Navigate to "Pages"
+3. Select "GitHub Actions" as the source
+
+Once enabled, your compiled PDFs will be available at `https://<username>.github.io/<repository>/`.
 
 ### Local PDF compilation with `latexmk`
 
