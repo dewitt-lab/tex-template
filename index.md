@@ -1,6 +1,6 @@
 {{ site.github.project_tagline }}
 
-{% for doc in site.data.documents %}
+{% for doc in site.config.documents %}
 
 - [{{ doc }}]({{ doc }}.pdf)
 
