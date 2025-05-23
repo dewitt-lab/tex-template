@@ -1,5 +1,7 @@
 {{ site.github.project_tagline }}
 
-{% for document in site.documents %}
-- [{{ document }}]({{ document }}.pdf)
+{% for doc in site.data.documents %}
+
+- [{{ doc }}]({{ doc }}.pdf)
+
 {% endfor %}
