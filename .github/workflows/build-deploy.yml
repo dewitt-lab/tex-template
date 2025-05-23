@@ -29,7 +29,8 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: *.tex
+          root_file: |
+            *.tex
       - name: move compiled PDFs to documents folder
         run: |
           mkdir -p documents
