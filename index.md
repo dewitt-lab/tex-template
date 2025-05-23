@@ -1,4 +1,5 @@
 {{ site.github.project_tagline }}
 
-- [Documents](documents/)
-- [Figures](figures/)
+{% for document in site.documents %}
+- [{{ document }}]({{ document }}.pdf)
+{% endfor %}

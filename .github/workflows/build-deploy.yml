@@ -31,12 +31,6 @@ jobs:
         with:
           root_file: |
             *.tex
-      - name: move compiled PDFs to documents folder
-        run: |
-          mkdir -p _site/documents
-          mv *.pdf _site/documents/
-          mkdir -p _site/figures
-          mv figures/*.pdf _site/figures/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll

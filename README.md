@@ -6,10 +6,30 @@
 
 ## Template contents
 - TeX source file: [`main.tex`](main.tex)
+- Configuration file: [`_config.yml`](_config.yml)
 - Bibtex bibliography file: [`references.bib`](references.bib)
 - Example PDF figure: [`darwin-rock.pdf`](figures/darwin-rock.pdf)
 - [`latexmkrc`](latexmkrc) file for optional customization of build directives (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs)
 - GitHub Actions workflow file (testing PDF compilation): [`.github/workflows/build-deploy.yml`](.github/workflows/build-deploy.yml)
+
+## Configuration
+
+The [`_config.yml`](_config.yml) file allows you to specify which LaTeX documents to publish to GitHub Pages:
+
+```yaml
+documents:
+  - main
+  - chapter1
+  - appendix
+```
+
+If you have multiple LaTeX documents in your repository, add them to the `documents` list in `_config.yml` (without the `.tex` extension). These documents will be:
+
+1. Compiled to PDF
+2. Listed on the GitHub Pages site
+3. Available for download
+
+If you don't specify any documents in `_config.yml`, all `.tex` files in the root directory will be compiled by default.
 
 ## Dependencies
 
@@ -31,9 +51,10 @@ If TeX compilation errors occur, the badge will reflect this, and the author of 
 
 ### GitHub Pages Deployment
 
-This template includes automatic deployment to GitHub Pages. When you push to the main branch, all TeX files will be compiled and their PDFs will be deployed to GitHub Pages with a simple directory listing.
+This template includes automatic deployment to GitHub Pages. When you push to the main branch, the documents specified in [`_config.yml`](_config.yml) will be compiled and their PDFs will be deployed to GitHub Pages with a simple directory listing.
 
 To enable GitHub Pages for your repository:
+
 1. Go to the repository settings
 2. Navigate to "Pages"
 3. Select "GitHub Actions" as the source
