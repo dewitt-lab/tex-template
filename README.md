@@ -8,7 +8,7 @@
 This repo contains a LaTeX writing project.
 Documents are automatically compiled upon each new commit and PDFs are served via a GitHub Pages site.
 After setting up GitHub Pages (see [below](#enable-github-pages)),
-your documents will be built and served at `https://<username>.github.io/<repository>/`.
+your documents will be built and served at `https://<user/org>.github.io/<repo>/`.
 
 
 ## Contents
