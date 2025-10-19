@@ -1,4 +1,4 @@
-name: Build LaTeX document and deploy PDF to GitHub Pages
+name: Compile LaTeX documents and deploy PDFs to GitHub Pages
 
 on:
   push:

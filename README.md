@@ -2,8 +2,7 @@
 
 <!---see here for how the relative links work: https://stackoverflow.com/questions/60193771/a-badge-in-github-template-repository-that-will-refer-to-clones-build-status-n--->
 [![Build and Deploy](../../actions/workflows/build-deploy.yml/badge.svg)](../../actions/workflows/build-deploy.yml)
-[![pages-build-deployment](../../actions/workflows/pages/pages-build-deployment/badge.svg)](../../actions/workflows/pages/pages-build-deployment)
-[![View PDFs](https://img.shields.io/badge/View-PDFs-blue?logo=github)](../../deployments/activity_log?environment=github-pages)
+[![View PDFs](https://img.shields.io/badge/View-PDFs-blue?logo=github)](../../deployments/github-pages)
 
 
 This repo contains a LaTeX writing project.
