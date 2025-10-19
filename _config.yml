@@ -1,0 +1,5 @@
+# By default, the GitHub Pages site will automatically list all PDF files generated from .tex files.
+# To specify which documents to display on the index page, uncomment the 'documents' section below and list the document names (without .tex or .pdf extension).
+
+# documents:
+#   - main

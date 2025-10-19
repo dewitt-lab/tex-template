@@ -1,42 +1,51 @@
-# Template repository for a LaTeX project
+# Template repository for a LaTeX writing project
 
 <!---see here for how the relative links work: https://stackoverflow.com/questions/60193771/a-badge-in-github-template-repository-that-will-refer-to-clones-build-status-n--->
 [![Build and Deploy](../../actions/workflows/build-deploy.yml/badge.svg)](../../actions/workflows/build-deploy.yml)
+[![pages-build-deployment](../../actions/workflows/pages/pages-build-deployment/badge.svg)](../../actions/workflows/pages/pages-build-deployment)
+[![View PDFs](https://img.shields.io/badge/View-PDFs-blue?logo=github)](../../deployments/activity_log?environment=github-pages)
 
 
-## Template contents
-- TeX source file: [`main.tex`](main.tex)
-- GitHub Pages document index: [`index.md`](index.md)
-- Example bibtex file: [`references.bib`](references.bib)
-- Example PDF figure: [`darwin-rock.pdf`](figures/darwin-rock.pdf)
-- [`latexmkrc`](latexmkrc) file for optional customization of build directives (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs)
-- GitHub Actions workflow file (building and deploying PDFs): [`.github/workflows/build-deploy.yml`](.github/workflows/build-deploy.yml)
+This repo contains a LaTeX writing project.
+Documents are automatically compiled upon each new commit and PDFs are served via a GitHub Pages site.
+After setting up GitHub Pages (see [below](#enable-github-pages)),
+your documents will be built and served at `https://<username>.github.io/<repository>/`.
 
-## PDF Deployment
 
-### Configuring GitHub Pages
+## Contents
 
-To enable GitHub Pages for your repository:
+### Writing
+
+- TeX source: [`main.tex`](main.tex)
+- Bibtex references: [`references.bib`](references.bib)
+- Figure directory: [`figures/`](figures/)
+
+> [!NOTE]
+> There's no need to commit compiled PDF files from your local build.
+> PDF files in the root directory are ignored by git.
+
+### Configuration
+
+- [`_config.yml`](_config.yml): optionally specify which documents to serve on GitHub Pages.
+By default, all `.tex` files in the repository root will be compiled and listed on the index page.
+Override this like so (note: no `.pdf` or `.tex` extension):
+  ```yaml
+  documents:
+    - main
+    - supplementary
+  ```
+- [`latexmkrc`](latexmkrc): optional customization of TeX build directives (see [`latexmk` docs](https://mg.readthedocs.io/latexmk.html)).
+
+
+## Enable GitHub Pages
+
+To enable GitHub Pages for a new repository using this template:
 
 1. Go to the repository settings
 2. Navigate to "Pages"
 3. Select "GitHub Actions" as the source
+4. Back on the main repository page, click the gear icon ⚙️ on the right to edit the "About" section and check the box for "Use your GitHub Pages website".
 
-Once enabled, your compiled PDFs will be available at `https://<username>.github.io/<repository>/`.
-
-### Adding PDFs to GitHub Pages
-
-> [!NOTE]
-> It is not necessary to commit compiled PDF files from your local build.
-> The [`.gitignore`](.gitignore) is set to ignore PDF files in the root directory.
-> If you want to commit PDF files (i.e. for figures), put them in a subdirectory.
-
-This template automatically compiles `.tex` files [`index.md`](index.md) to PDFs. You can simply:
-
-1. Add your LaTeX files to the repository root
-2. Update the [`index.md`](index.md) file to include links to the corresponding PDF files (e.g. `main.pdf` for `main.tex`)
-3. Push changes to the main branch
-4. PDFs will be available on GitHub Pages
 
 ## Dependencies
 

@@ -4,7 +4,10 @@
 % --------
 \usepackage{graphicx}
 \usepackage[font={footnotesize,sf}]{caption}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+\addbibresource{references.bib}
 
 \usepackage{amsmath}
 \DeclareMathOperator{\erf}{erf}
@@ -36,28 +39,11 @@
 
 \section*{Introduction}\label{sec:intro}
 
-\begin{prop}\label{prop:evo}
-Evolution is awesome.
-\end{prop}
-\begin{proof}
-  See \cite{darwin1909origin} and Figure~\ref{fig:darwin} in \nameref{sec:results}.
-\end{proof}
-
 \section*{Results}\label{sec:results}
 
-As shown in Figure~\ref{fig:darwin}, Charles Darwin rocked hard---really hard.
-We use this finding to prove Proposition~\ref{prop:evo}.
-
-% WSD: DALLE image generation inspired by Andy Kern's tweet https://twitter.com/pastramimachine/status/1536354513627381760?s=20&t=NGXiPZuz9rHWdMvJpMoCrw
-\begin{figure}[h]
- \centering
- \includegraphics[width=0.3\textwidth]{figures/darwin-rock}
- \caption{Archival photograph of Charles Darwin playing his electric guitar.}
- \label{fig:darwin}
-\end{figure}
+\section*{Discussion}\label{sec:discussion}
 
 
-\bibliographystyle{plain}
-\bibliography{references}
+\printbibliography
 
 \end{document}
