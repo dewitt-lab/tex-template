@@ -2,7 +2,7 @@
 
 This directory contains images to be included in the figures of your LaTeX documents.
 
-Place your image files (`.pdf`, `.png`, `.jpg`, etc.) here and reference them in your `.tex` files using:
+Place your image files (`.pdf`, `.png`, `.jpg`, etc.) here and reference them in your `.tex` files like so:
 
 ```latex
 \begin{figure}[htbp]
