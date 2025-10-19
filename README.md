@@ -2,7 +2,7 @@
 
 <!---see here for how the relative links work: https://stackoverflow.com/questions/60193771/a-badge-in-github-template-repository-that-will-refer-to-clones-build-status-n--->
 [![Build and Deploy](../../actions/workflows/build-deploy.yml/badge.svg)](../../actions/workflows/build-deploy.yml)
-[![View PDFs](https://img.shields.io/badge/View-PDFs-blue?logo=github)](../../deployments/github-pages)
+[![Deployed PDFs](https://img.shields.io/badge/Deployed-PDFs-red?logo=files&logoColor=white)](../../deployments/github-pages)
 
 
 This repo contains a LaTeX writing project.
@@ -33,7 +33,7 @@ Override this like so (note: no `.pdf` or `.tex` extension):
     - main
     - supplementary
   ```
-- [`latexmkrc`](latexmkrc): optional customization of TeX build directives (see [`latexmk` docs](https://mg.readthedocs.io/latexmk.html)).
+- [`latexmkrc`](latexmkrc): optional customization of TeX build directives (see [`latexmk`](https://mg.readthedocs.io/latexmk.html) docs).
 
 
 ## Enable GitHub Pages
@@ -48,7 +48,7 @@ To enable GitHub Pages for a new repository using this template:
 
 ## Dependencies
 
- - TeX Live: [www.tug.org/texlive/]()
+ - [TeX Live](www.tug.org/texlive/)
 
 
 ## Local PDF compilation with `latexmk`
