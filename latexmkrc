@@ -1,2 +1,3 @@
 @default_files = ('*.tex');
-$bibtex_use = 2;
+$pdf_mode = 1;
+$biber = 'biber --validate-datamodel %O %S';
