@@ -26,10 +26,10 @@ your documents will be built and served at `https://<user/org>.github.io/<repo>/
 ### Configuration
 
 - [`_config.yml`](_config.yml): optionally specify which documents to serve on GitHub Pages.
-By default, all `.tex` files in the repository root will be compiled and listed on the index page.
+By default, all `.tex` files in the repository root will be compiled and linked on the index page.
 Override this like so (note: no `.pdf` or `.tex` extension):
   ```yaml
-  documents:
+  document_links:
     - main
     - supplementary
   ```
